@@ -40,6 +40,6 @@ module.exports = function toReadable (number) {
         result += decadeNumbers[Math.trunc((number % 100) / 10)];
         if (number % 10) result += " " + simpleNumbers[number % 10];
     }
-    return result;
+    return result.trim();
 
 }
